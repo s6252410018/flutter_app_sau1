@@ -11,11 +11,11 @@ class _SecondUIState extends State<SecondUI> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: Colors.red,สีพื้น
+      // backgroundColor: Colors.lightBlue,
       appBar: AppBar(
-        backgroundColor: Colors.pink[100],
+        backgroundColor: Colors.pink[300],
         title: Text(
-          'Second UI :)',
+          'Second Pages',
         ),
         centerTitle: true,
         actions: [
@@ -29,22 +29,23 @@ class _SecondUIState extends State<SecondUI> {
             onPressed: () {},
             icon: Icon(
               Icons.exit_to_app,
-              color: Colors.grey[850],
+              color: Colors.white,
             ),
-          )
+          ),  
         ],
       ),
       drawer: Drawer(
-        child: ListView(
+        child: ListView( 
           padding: EdgeInsets.zero,
           children: [
             UserAccountsDrawerHeader(
               currentAccountPicture: CircleAvatar(
                 backgroundImage: AssetImage(
-                  'assets/images/Profile.jpg'),
+                  'assets/images/myprofile.png',
+                ),
               ),
               accountName: Text(
-                'Narupon Musikanon',
+                'Narupon Musikanon'
               ),
               accountEmail: Text(
                 '6252410018',
@@ -52,46 +53,45 @@ class _SecondUIState extends State<SecondUI> {
               decoration: BoxDecoration(
                 image: DecorationImage(
                   image: AssetImage(
-                    'assets/images/BG.png',
+                  'assets/images/bgdrawer.jpg',
                   ),
                   fit: BoxFit.fill,
                 ),
               ),
               otherAccountsPictures: [
                 Image.asset(
-                  'assets/images/SAU.png',  
+                  'assets/images/saulogo.png',
                 ),
               ],
             ),
             ListTile(
               onTap: () {},
               title: Text(
-                'หน้าแรก',
-              ),
+                'GO BACK TO First Impact'
+              ),                          
             ),
             ListTile(
               onTap: () {},
               title: Text(
-                'ตารางสอน',
+                'Timeline'
               ),
               leading: Icon(
-                Icons.favorite,
-                color: Colors.red,
-              ),
+                Icons.table_chart,
+                color: Colors.redAccent[700],
+              )
             ),
             ListTile(
               onTap: () {},
               title: Text(
-                'ตารางสอบ'
+                'Angel'
               ),
               leading: Icon(
-                Icons.access_alarms,
-                color: Colors.yellow,
+                Icons.access_alarm,
               ),
               trailing: Text(
-                '999',
+                '13',                
                 style: TextStyle(
-                  color: Colors.pink,
+                  color: Colors.red,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -102,16 +102,17 @@ class _SecondUIState extends State<SecondUI> {
             ListTile(
               onTap: () {},
               title: Text(
-                'Logout',
+                'About NERV'
               ),
               trailing: Icon(
                 Icons.exit_to_app,
-                color: Colors.redAccent,
-              ),
+                color: Colors.redAccent[700],
+              ),                          
             ),
           ],
         ),
       ),
+    
     );
   }
 }

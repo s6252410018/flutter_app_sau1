@@ -6,39 +6,37 @@ class FirstUI extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // backgroundColor: Colors.blueGrey,
+      // backgroundColor: Colors.blueAccent,
       appBar: AppBar(
-        title: Text('Helloo :)'),
+        title: Text('Second Impact'),
         centerTitle: true,
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         child: Icon(
           Icons.add,
-          color: Colors.teal[50],
+          color: Colors.black87,
         ),
       ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.miniStartFloat,
-      body: Center(
+      floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
+      body: Center( 
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.center ,
           children: [
             Text(
-              'นฤพล มุสิกานนท์',
+              'Narupon Muskikanon',
               style: TextStyle(
-                fontSize: 20.0,
+                fontSize: 30.0, 
                 fontWeight: FontWeight.bold,
-                color: Colors.redAccent
-                
+                color: Colors.redAccent[400],
               ),
             ),
-             Text(
+            Text(
               '6252410018',
               style: TextStyle(
-                fontSize: 20.0,
-                fontWeight: FontWeight.bold,
-                color: Colors.redAccent
-                
+                fontSize: 25.0, 
+                fontWeight: FontWeight.normal,
+                color: Colors.redAccent[700],
               ),
             ),
           ],
